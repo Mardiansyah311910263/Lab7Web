@@ -163,10 +163,7 @@ http://localhost/lab7_php_dasar/latihan2.php?nama=Mardiansyah
 ```
 ![13](https://user-images.githubusercontent.com/81758407/117993200-b6846500-b369-11eb-80f4-94dae5165dc3.PNG)
 ## Pertanyaan dan Tugas
-### Buatlah program PHP sederhana dengan menggunakan form input yang menampilkan
-nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung
-umur berdasarkan inputan tanggal lahir. Dan pilihan pekerjaan dengan gaji yang
-berbeda-beda sesuai pilihan pekerjaan.
+Buatlah program PHP sederhana dengan menggunakan form input yang menampilkan nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung umur berdasarkan inputan tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai pilihan pekerjaan.
 ```
 <h2>Pertanyaan dan Tugas</h2>
     <form method="post">
