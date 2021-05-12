@@ -162,6 +162,66 @@ http://localhost/lab7_php_dasar/latihan2.php?nama=Mardiansyah
     ?>
 ```
 ![13](https://user-images.githubusercontent.com/81758407/117993200-b6846500-b369-11eb-80f4-94dae5165dc3.PNG)
+## Pertanyaan dan Tugas
+### Buatlah program PHP sederhana dengan menggunakan form input yang menampilkan
+nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung
+umur berdasarkan inputan tanggal lahir. Dan pilihan pekerjaan dengan gaji yang
+berbeda-beda sesuai pilihan pekerjaan.
+```
+<h2>Pertanyaan dan Tugas</h2>
+    <form method="post">
+            <label>Nama Lengkap: </label>
+            <input type="text" name="nama">
+            <br>
+            <label>Tempat Lahir: </label>
+            <input type="text" name="tempat_lahir">
+            <br>
+            <label>Tanggal Lahir: </label>
+            <input type="date" name="tgl_lahir">
+            <br>
+            <label>Alamat: </label>
+            <input type="text" name="alamat">
+            <br>
+            <label>Pekerjaan:
+            <select name='pekerjaan'>
+                <option value='Presiden'>Presiden</option>
+                <option value='Mentri'>Mentri</option>
+                <option value='Gubernur'>Gubernur</option>
+                <option value='Bupati'>Bupati</option>
+            </select>
+            </label>
+            <br>
+            <input type="submit" value="Kirim">
+    </form>
+    <h2>Output</h2>
+    <?php
+        echo '<br> Nama Lengkap : ' . $_POST['nama'];
+        echo '<br> Tempat Lahir : ' . $_POST['tempat_lahir'];
+        echo '<br> Alamat : ' . $_POST['alamat'];
+            $tgl_lahir = @$_POST['tgl_lahir'];
+            $lahir = new DateTime($tgl_lahir);
+            $hari_ini = new DateTime();
+            $diff = $hari_ini->diff($lahir);
+        echo "<br> Usia : ". $diff->y ." Tahun";
+        echo "<br> Pekerjaan : ". $_POST['pekerjaan'];
+            $pekerjaan = @$_POST['pekerjaan'];
+            if($pekerjaan == "Presiden"){
+                echo '<br> Gaji : Rp. 1.000.000.000,-';
+            }
+            elseif($pekerjaan == "Mentri"){
+                echo '<br> Gaji : Rp. .500.000.000,-';
+            }
+            elseif($pekerjaan == "Gubernur"){
+                echo '<br> Gaji : Rp. 250.000.000,-';
+            }
+            elseif($pekerjaan == "Bupati"){
+                echo '<br> Gaji : Rp. 150.000.000,-';
+            }
+    ?>
+```
+![code](https://user-images.githubusercontent.com/81758407/117995693-bbe2af00-b36b-11eb-8cdf-289f01021429.PNG)
+![tugas](https://user-images.githubusercontent.com/81758407/117995708-be450900-b36b-11eb-847d-5cc1c9c48534.PNG)
+
 
 
 
