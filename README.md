@@ -119,7 +119,8 @@ http://localhost/lab7_php_dasar/latihan2.php?nama=Mardiansyah
             }
     ?>
 ```
-![10](https://user-images.githubusercontent.com/81758407/117991901-ab7d0500-b368-11eb-8ccb-5c2777846340.PNG)
+![10](https://user-images.githubusercontent.com/81758407/117994196-8f7a6300-b36a-11eb-8f56-70e57f94866c.PNG)
+
 ## Perulangan for
 ```
 <h2>Perulangan For</h2>
